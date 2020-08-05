@@ -1,3 +1,113 @@
 SELECT * FROM SYS.OBJECTS
 
 GO 
+
+
+alexa@LAPTOP-5LSS0CK5 MINGW64 ~
+$ cd c:
+
+alexa@LAPTOP-5LSS0CK5 MINGW64 /c
+$ ls
+'$Recycle.Bin'/               'Program Files'/
+'Arquivos de Programas'@      'Program Files (x86)'/
+'Arquivos de Programas RFB'/   ProgramData/
+ Boot/                         Recovery/
+ bootmgr                      'Riot Games'/
+ Config.Msi/                   swapfile.sys
+'Documents and Settings'@     'System Volume Information'/
+ hiberfil.sys                  Temp/
+ Intel/                        UserGuidePDF/
+ MSOCache/                     Users/
+ OneDriveTemp/                 Windows/
+ pagefile.sys                  Windows.old/
+ PerfLogs/
+
+alexa@LAPTOP-5LSS0CK5 MINGW64 /c
+$ ls
+'$Recycle.Bin'/                PerfLogs/
+'Arquivos de Programas'@      'Program Files'/
+'Arquivos de Programas RFB'/  'Program Files (x86)'/
+ Boot/                         ProgramData/
+ bootmgr                       Recovery/
+ Config.Msi/                  'Riot Games'/
+'Documents and Settings'@      swapfile.sys
+ Git/                         'System Volume Information'/
+ hiberfil.sys                  Temp/
+ Intel/                        UserGuidePDF/
+ MSOCache/                     Users/
+ OneDriveTemp/                 Windows/
+ pagefile.sys                  Windows.old/
+
+alexa@LAPTOP-5LSS0CK5 MINGW64 /c
+$ cd Git
+
+alexa@LAPTOP-5LSS0CK5 MINGW64 /c/Git
+$ git config --global user.name "aadacosta"
+
+alexa@LAPTOP-5LSS0CK5 MINGW64 /c/Git
+$ git config  --global user.email "alexandre_894@hotmail.com"
+
+alexa@LAPTOP-5LSS0CK5 MINGW64 /c/Git
+$ git clone https://github.com/aadacosta/Data-Science-Ale.git
+Cloning into 'Data-Science-Ale'...
+remote: Enumerating objects: 3, done.
+remote: Counting objects: 100% (3/3), done.
+remote: Compressing objects: 100% (2/2), done.
+remote: Total 3 (delta 0), reused 0 (delta 0), pack-reused 0
+Unpacking objects: 100% (3/3), 650 bytes | 1024 bytes/s, done.
+
+alexa@LAPTOP-5LSS0CK5 MINGW64 /c/Git
+$ cd Data-Science_Ale
+bash: cd: Data-Science_Ale: No such file or directory
+
+alexa@LAPTOP-5LSS0CK5 MINGW64 /c/Git
+$ cd: Data-Science
+bash: cd:: command not found
+
+alexa@LAPTOP-5LSS0CK5 MINGW64 /c/Git
+$ cd Data-Science
+bash: cd: Data-Science: No such file or directory
+
+alexa@LAPTOP-5LSS0CK5 MINGW64 /c/Git
+$ cd Data-Science-Ale
+
+alexa@LAPTOP-5LSS0CK5 MINGW64 /c/Git/Data-Science-Ale (master)
+$ git add Procedure_WRK.sql
+fatal: pathspec 'Procedure_WRK.sql' did not match any files
+
+alexa@LAPTOP-5LSS0CK5 MINGW64 /c/Git/Data-Science-Ale (master)
+$ git add Procedure_WRK.sql
+fatal: pathspec 'Procedure_WRK.sql' did not match any files
+
+alexa@LAPTOP-5LSS0CK5 MINGW64 /c/Git/Data-Science-Ale (master)
+$ ls
+Procedure_WRK.sql.txt  README.md
+
+alexa@LAPTOP-5LSS0CK5 MINGW64 /c/Git/Data-Science-Ale (master)
+$ ^C
+
+alexa@LAPTOP-5LSS0CK5 MINGW64 /c/Git/Data-Science-Ale (master)
+$ git add Procedure_WRK.sql.txt
+
+alexa@LAPTOP-5LSS0CK5 MINGW64 /c/Git/Data-Science-Ale (master)
+$ git commit -m "Esse foi o meu primeiro commit desse arquivo" Procedure_WRK.sql.txt
+[master 1cd6b04] Esse foi o meu primeiro commit desse arquivo
+ 1 file changed, 3 insertions(+)
+ create mode 100644 Procedure_WRK.sql.txt
+
+alexa@LAPTOP-5LSS0CK5 MINGW64 /c/Git/Data-Science-Ale (master)
+$ git push -u origin master
+fatal: TaskCanceledException encountered.
+   Uma tarefa foi cancelada.
+Enumerating objects: 4, done.
+Counting objects: 100% (4/4), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (2/2), done.
+Writing objects: 100% (3/3), 344 bytes | 344.00 KiB/s, done.
+Total 3 (delta 0), reused 0 (delta 0), pack-reused 0
+To https://github.com/aadacosta/Data-Science-Ale.git
+   243ebb7..1cd6b04  master -> master
+Branch 'master' set up to track remote branch 'master' from 'origin'.
+
+alexa@LAPTOP-5LSS0CK5 MINGW64 /c/Git/Data-Science-Ale (master)
+$ ^C
